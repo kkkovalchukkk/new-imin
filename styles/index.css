@@ -454,6 +454,9 @@ p.text b {
   width: 100%;
   margin: 105px 0 100px;
 }
+.about-section__swiper-right, .about-section__swiper-left {
+  display: none;
+}
 .about-section__row {
   width: 100%;
   margin-bottom: 27px;
