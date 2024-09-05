@@ -1,0 +1,50 @@
+html,
+body {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  font-family: $mainFont;
+}
+
+.page {
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px;
+  max-width: $wrapperWidth + 32px;
+  margin: 0 auto;
+  display: flex;
+}
+
+p,
+p.text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: $blue;
+  @include fluid-font(16px, 40px);
+  b {
+    font-weight: bold;
+  }
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #005bb9;
+  @include fluid-font(20px, 60px);
+}
