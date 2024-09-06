@@ -892,6 +892,16 @@ p.text b {
   align-items: flex-start;
   justify-content: start;
 }
+.tutors-section__swiper {
+  width: 100%;
+  display: none;
+}
+.tutors-section__swiper-holder {
+  width: 100%;
+}
+.tutors-section__swiper-left, .tutors-section__swiper-right {
+  display: none;
+}
 .tutors-section__heading {
   margin-bottom: 80px;
 }
@@ -1042,7 +1052,6 @@ p.text b {
 .why-section__btn {
   margin-top: 100px;
   font-weight: 500;
-  font-size: 32px;
   line-height: 130%;
   text-align: center;
   color: #005bb9;
@@ -1654,5 +1663,279 @@ p.text b {
   .go-up-link {
     width: 132px;
     height: 132px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0px 24px;
+  }
+  .header__logo-link svg {
+    width: 220px;
+    height: auto;
+  }
+  .header__nav {
+    top: 152.48px;
+  }
+  .about-section__swiper-left {
+    left: 0;
+  }
+  .about-section__swiper-right {
+    right: 0;
+  }
+  .program-section__grid {
+    grid-template-columns: 1fr;
+  }
+  .program-section__grid-item::after {
+    opacity: 0.5;
+  }
+  .tutors-section__heading {
+    font-size: 60px;
+  }
+  .tutors-section__list {
+    display: none;
+    gap: 64px;
+  }
+  .tutors-section__swiper {
+    display: block;
+  }
+  .tutors-section__swiper-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+    border: 2px solid #005bb9;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .tutors-section__swiper-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+    border: 2px solid #005bb9;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .tutors-section__swiper-holder {
+    position: relative;
+    padding: 0px 24px;
+  }
+  .tutors-section .swiper-button-disabled {
+    opacity: 0.3;
+  }
+  .tutors-section__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .tutors-section__list-item-holder {
+    position: relative;
+    max-width: unset;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .tutors-section__list-item-holder::after {
+    opacity: 0.5;
+  }
+  .tutors-section__list-item-img {
+    -o-object-position: top;
+       object-position: top;
+  }
+  .tutors-section__list-item-body {
+    height: 360px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .form-section {
+    margin: 64px 0;
+  }
+  .go-up-link {
+    width: 72px;
+    height: 72px;
+  }
+  .go-up-link svg {
+    width: 24px;
+  }
+}
+@media (max-width: 625px) {
+  .header {
+    padding: 0;
+    height: 100px;
+  }
+  .header__nav {
+    top: 100px;
+  }
+  .promo-section {
+    margin-top: 100px;
+  }
+  .about-section__swiper-left, .about-section__swiper-right {
+    width: 48px;
+    height: 48px;
+  }
+  .about-section__swiper-left svg, .about-section__swiper-right svg {
+    width: 32px;
+  }
+  .subheading {
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-size: calc(20px + (48 - 20) * (100vw - 320px) / (1920 - 320));
+  }
+}
+@media screen and (max-width: 625px) and (max-width: 320px) {
+  .subheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 625px) and (min-width: 1920px) {
+  .subheading {
+    font-size: 48px;
+  }
+}
+@media (max-width: 625px) {
+  .program-section__content-heading {
+    margin-bottom: 24px;
+  }
+  .program-section__grid {
+    grid-auto-rows: minmax(380px, 1fr);
+  }
+  .program-section__grid-item-bg {
+    -o-object-position: center;
+       object-position: center;
+  }
+  .program-section__grid-item_empty .program-section__grid-item-heading {
+    font-size: 32px !important;
+  }
+  .program-section__grid-item-subtext {
+    font-size: 20px;
+  }
+  .certificate-section__wrapper {
+    gap: 0;
+  }
+  .certificate-section__figure {
+    margin-top: 24px;
+  }
+  .certificate-section__figure-image {
+    height: auto;
+  }
+  .tutors-section__swiper-left, .tutors-section__swiper-right {
+    width: 48px;
+    height: 48px;
+  }
+  .tutors-section__swiper-left svg, .tutors-section__swiper-right svg {
+    width: 32px;
+  }
+  .tutors-section__list-item-holder {
+    height: 480px;
+  }
+}
+@media (max-width: 525px) {
+  .about-section {
+    margin: 48px 0;
+  }
+  .about-section__slide {
+    padding: 24px;
+  }
+  .about-section__slide-heading {
+    font-size: 22px;
+  }
+  .program-section {
+    margin: 48px 0;
+  }
+  .program-section__grid-item-heading {
+    text-align: left;
+    font-size: 24px !important;
+  }
+  .tutors-section__list-item-holder {
+    height: 400px;
+  }
+  .tutors-section__list-item-body {
+    height: 320px;
+  }
+  .why-section__list-item {
+    padding: 16px;
+  }
+  .why-section__list-item-text {
+    font-size: 20px;
+  }
+  .why-section__list-item-counter {
+    font-size: 24px;
+  }
+  .form__input {
+    padding: 16px;
+  }
+}
+@media (max-width: 475px) {
+  .header__logo-link svg {
+    width: 160px;
+  }
+  .tutors-section__swiper-left {
+    left: -16px;
+  }
+  .tutors-section__swiper-right {
+    right: -16px;
+  }
+  .tutors-section__list-item-body {
+    padding: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .why-section__list-item-text {
+    font-size: 16px;
+  }
+  .why-section__list-item-counter {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .header__logo-link svg {
+    width: 120px;
+  }
+  .wrapper {
+    padding: 0px 16px;
+  }
+  .about-section__slide {
+    height: 320px;
+  }
+  .program-section__grid-item-heading {
+    font-size: 18px !important;
+  }
+  .tutors-section__swiper-holder {
+    padding: 0;
+  }
+  .tutors-section__list-item-holder {
+    height: 320px;
+  }
+  .tutors-section__list-item-body {
+    height: 249px;
+  }
+  .tutors-section__swiper-right,
+  .tutors-section__swiper-left,
+  .about-section__swiper-left,
+  .about-section__swiper-right {
+    width: 24px;
+    height: 24px;
+  }
+  .tutors-section__swiper-right svg,
+  .tutors-section__swiper-left svg,
+  .about-section__swiper-left svg,
+  .about-section__swiper-right svg {
+    width: 16x;
   }
 }/*# sourceMappingURL=index.css.map */

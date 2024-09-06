@@ -451,6 +451,17 @@
     align-items: flex-start;
     justify-content: start;
   }
+  &__swiper {
+    width: 100%;
+    display: none;
+    &-holder {
+      width: 100%;
+    }
+    &-left,
+    &-right {
+      display: none;
+    }
+  }
 
   &__heading {
     margin-bottom: 80px;
@@ -566,7 +577,7 @@
   &__btn {
     margin-top: 100px;
     font-weight: 500;
-    font-size: 32px;
+    // font-size: 32px;
     line-height: 130%;
     text-align: center;
     color: #005bb9;

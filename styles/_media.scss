@@ -425,3 +425,351 @@
     height: 132px;
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0px 24px;
+  }
+  .header {
+    &__logo-link {
+      svg {
+        width: 220px;
+        height: auto;
+      }
+    }
+    &__nav {
+      top: 152.48px;
+    }
+  }
+  .about-section {
+    &__swiper {
+      &-left {
+        left: 0;
+      }
+      &-right {
+        right: 0;
+      }
+    }
+  }
+  .program-section {
+    &__grid {
+      grid-template-columns: 1fr;
+      &-item {
+        &::after {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .tutors-section {
+    &__heading {
+      font-size: 60px;
+    }
+    &__list {
+      display: none;
+      gap: 64px;
+    }
+    &__swiper {
+      display: block;
+
+      &-left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 99;
+        border: 2px solid $blue;
+        background-color: white;
+        border-radius: 50%;
+      }
+      &-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 99;
+        border: 2px solid $blue;
+        background-color: white;
+        border-radius: 50%;
+      }
+      &-holder {
+        position: relative;
+        padding: 0px 24px;
+      }
+    }
+    .swiper-button-disabled {
+      opacity: 0.3;
+    }
+    &__list-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      &-holder {
+        position: relative;
+        max-width: unset;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        &::after {
+          opacity: 0.5;
+        }
+      }
+      &-img {
+        object-position: top;
+      }
+      &-body {
+        height: 360px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  .form-section {
+    margin: 64px 0;
+  }
+  .go-up-link {
+    width: 72px;
+    height: 72px;
+    svg {
+      width: 24px;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .header {
+    padding: 0;
+    height: 100px;
+    &__nav {
+      top: 100px;
+    }
+  }
+  .promo-section {
+    margin-top: 100px;
+  }
+  .about-section {
+    &__swiper {
+      &-left,
+      &-right {
+        width: 48px;
+        height: 48px;
+        svg {
+          width: 32px;
+        }
+      }
+    }
+  }
+  .subheading {
+    margin-bottom: 24px;
+    @include fluid-font(20px, 48px);
+  }
+  .program-section {
+    &__content-heading {
+      margin-bottom: 24px;
+    }
+    &__grid {
+      grid-auto-rows: minmax(380px, 1fr);
+      &-item {
+        &-bg {
+          object-position: center;
+        }
+        &_empty {
+          .program-section__grid-item-heading {
+            font-size: 32px !important;
+          }
+        }
+        &-subtext {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .certificate-section {
+    &__wrapper {
+      gap: 0;
+    }
+    &__figure {
+      margin-top: 24px;
+      &-image {
+        height: auto;
+      }
+    }
+  }
+  .tutors-section {
+    &__swiper {
+      &-left,
+      &-right {
+        width: 48px;
+        height: 48px;
+        svg {
+          width: 32px;
+        }
+      }
+    }
+    &__list {
+      &-item {
+        &-holder {
+          height: 480px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .about-section {
+    margin: 48px 0;
+    &__slide {
+      padding: 24px;
+      &-heading {
+        font-size: 22px;
+      }
+    }
+  }
+  .program-section {
+    margin: 48px 0;
+    &__grid {
+      &-item {
+        &-heading {
+          text-align: left;
+          font-size: 24px !important;
+        }
+      }
+    }
+  }
+  .tutors-section {
+    &__list {
+      &-item {
+        &-holder {
+          height: 400px;
+        }
+        &-body {
+          height: 320px;
+        }
+      }
+    }
+  }
+  .why-section {
+    &__list {
+      &-item {
+        padding: 16px;
+        &-text {
+          font-size: 20px;
+        }
+        &-counter {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .form {
+    &__input {
+      padding: 16px;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    &__logo-link {
+      svg {
+        width: 160px;
+      }
+    }
+  }
+  .tutors-section {
+    &__swiper {
+      &-left {
+        left: -16px;
+      }
+      &-right {
+        right: -16px;
+      }
+    }
+    &__list {
+      &-item {
+        &-body {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .why-section {
+    &__list-item {
+      &-text {
+        font-size: 16px;
+      }
+      &-counter {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__logo-link {
+      svg {
+        width: 120px;
+      }
+    }
+  }
+  .wrapper {
+    padding: 0px 16px;
+  }
+
+  .about-section {
+    &__slide {
+      height: 320px;
+    }
+  }
+
+  .program-section {
+    &__grid-item-heading {
+      font-size: 18px !important;
+    }
+  }
+  .tutors-section {
+    &__swiper-holder {
+      padding: 0;
+    }
+    &__list {
+      &-item {
+        &-holder {
+          height: 320px;
+        }
+        &-body {
+          height: 249px;
+        }
+      }
+    }
+  }
+  .tutors-section__swiper-right,
+  .tutors-section__swiper-left,
+  .about-section__swiper-left,
+  .about-section__swiper-right {
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 16x;
+    }
+  }
+}
