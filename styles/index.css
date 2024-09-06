@@ -1772,6 +1772,9 @@ p.text b {
   .go-up-link svg {
     width: 24px;
   }
+  .burger {
+    width: 66px;
+  }
 }
 @media (max-width: 625px) {
   .header {
@@ -1845,6 +1848,9 @@ p.text b {
   }
 }
 @media (max-width: 525px) {
+  .burger {
+    width: 48px;
+  }
   .about-section {
     margin: 48px 0;
   }
